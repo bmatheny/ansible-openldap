@@ -163,7 +163,7 @@
 
 - name: copy DB_CONFIG
   template:
-    src: DB_CONFIG.j2
+    src: db_config.j2
     dest: "{{ openldap_server_db_path }}/DB_CONFIG"
     mode: 0644
     owner: "{{ openldap_server_user }}"
